@@ -12,9 +12,7 @@ import {PdfService} from '../common/api.service'
   }
 
   const getters = {
-      data(state){
-        console.log(state);
-        
+      data(state){        
           return state.data;
       },
       isLoading(state){
@@ -29,9 +27,8 @@ import {PdfService} from '../common/api.service'
 
   const actions ={
      async  [GET_PDF]({commit}){
-          
-        const {data} = await PdfService.getAll()
-
+       
+       const {data} = await PdfService.getAll()
        const state2 = {
          files: []
        }
@@ -40,10 +37,6 @@ import {PdfService} from '../common/api.service'
           state2.files.push(data[key])
 
         }
-        console.log(state2);
-
-        console.log(data);
-        
         commit(FETCH_END, state2);
        
       }
@@ -54,8 +47,6 @@ import {PdfService} from '../common/api.service'
         state.isLoading = true;
       },
     [FETCH_END](state, { files,pdfsCount }) {
-       console.log(files);
-       
         state.data = files;
         state.isLoading = false;
         state.pdfsCount = pdfsCount
