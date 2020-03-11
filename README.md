@@ -1,13 +1,13 @@
 # VUE FRONTEND
 
-- [Alejandro](https://github.com/ALEJ4NDRO29/)
+- [Angel](https://github.com/vaoangel)
 - [Juanan](https://github.com/juanantoniogisbert)
 
 
 ## Instalación
-    git clone https://github.com/juanantoniogisbert/vue_frontend-001.git
+    git clone https://github.com/vaoangel/vue_frontend.git
 
-    cd vue_frontend-001
+    cd vue_frontend
 
     npm install
 
@@ -23,6 +23,14 @@ La aplicacion de VUE utiliza el backend Django.
 
 
 En esta aplicación cogemos todos los datos que nos envian desde el servidor de Django.
-- Home: podemos encontrar un listado de Hoteles con una breve informacion.
-- Login
-- Register
+- Pdfs: podemos encontrar un listado del registro de los documentos que ha imprimido cada usuario con una breve informacion.
+
+### Authentication
+
+* Login
+
+![alt text](./media_readme/LoginForm.png)
+
+Una vez logueados depende del tipo de usuario se mostrará un menu o otro
+
+### Menú para usuarios normales
