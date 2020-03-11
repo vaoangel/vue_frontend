@@ -4,8 +4,6 @@
 			<img src="../assets/acabadosInsa.png" class="logo"/>
 		</div>
 		<b-navbar toggleable="lg" type="dark" class="navbar">
-			<b-navbar-brand href="#" class="image">
-			</b-navbar-brand>
 			<b-collapse id="nav-collapse" is-nav>
 				<b-navbar-nav>
 					<b-nav-item href="/">Home</b-nav-item>
