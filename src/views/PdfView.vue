@@ -1,8 +1,8 @@
 <template>
     <div>
-            <registreViewer v-for="(data,index) in data"
-            :data = data
-            :key="data.id + index"/>
+        <registreViewer v-for="(data,index) in data"
+        :data = data
+        :key="data.id + index"/>
     </div>
 </template>
 
@@ -14,7 +14,7 @@ import registreViewer from './registreViewer'
 export default {
     name: 'PdfView',
     components:{
-         registreViewer
+        registreViewer
     },
 
     computed:{
