@@ -17,9 +17,8 @@ En el comando "npm install" instalamos todas las dependencias y librerias necesa
 
 ## Descripción 
 
-La aplicacion de VUE utiliza el backend Django.
+La aplicacion de VUE utiliza un backend construido con  Django.
 
- - https://github.com/juanantoniogisbert/backend_django-001.git
 
 
 En esta aplicación cogemos todos los datos que nos envian desde el servidor de Django.
