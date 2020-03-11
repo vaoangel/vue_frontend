@@ -1,11 +1,21 @@
 body {
-    background-color: #202040;
+    background-color: white;
 }
-
+a{
+    color:white;
+}
 #app {
     color: #fff;
 }
+#app:hover{
+    color: #087ac3;
+}
+#logo{
+    padding-left: 45%;
+    padding-top: 15%;
+    height: 40%;
 
+}
 .card {
     background-color: #202040;
 }
