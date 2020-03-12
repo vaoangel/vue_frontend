@@ -14,3 +14,5 @@ const store = new Vuex.Store({
 });
 
 export default store;
+
+//Aqui se recojen todos los ficheros del store para exportarlos

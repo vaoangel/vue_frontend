@@ -1,3 +1,4 @@
+//Tipos de mutations
 export const FETCH_END = "setFiles";
 export const FETCH_START = "setLoading";
 export const PURGE_AUTH = "logOut";

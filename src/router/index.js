@@ -34,7 +34,11 @@ const routes = [
 	{
 		path: '/pdf',
 		component: () => import('@/views/PdfView')
-	}
+	},
+	// {
+	// 	path: '/logout',
+	// 	component: () => import('@/views/Logout')
+	// }
 
 ]
 

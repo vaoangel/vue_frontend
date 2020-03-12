@@ -1,8 +1,9 @@
+<!--Este es el componente donde se recoje la información del v-for para renderizarla-->
 <template>
   <div>
     <b-card>
       <b-card>
-        <b-card-text><span class="title">Albaran: </span> <span class="content">{{data.albaran }}</span></b-card-text>
+        <b-card-text><span class="title">Albaran: </span> <span class="content">{{data.albaran}}</span></b-card-text>
         <b-card-text><span class="title">Operario: </span> <span class="content">{{data.operari}}</span></b-card-text>
         <b-card-text><span class="title">Impreso: </span> <span class="content">{{data.creado}}</span></b-card-text>
       </b-card>
@@ -28,6 +29,7 @@
 <script>
 export default {
   name: "registreViewer",
+  //Aqui se recoje y se especifica el tipo de información que recibe el componente
   props: {
     data: { type: Object, required: true }
   }
