@@ -13,7 +13,7 @@
 					</div>
 					<div id="usuaris"  v-if="currentUser">
 						<b-nav-item href="http://127.0.0.1:8000/files/admin/" v-if="currentUser.is_staff == true">Upload Files</b-nav-item>
-						<b-nav-item :href="'http://127.0.0.1:8000/files/basic-upload/?username='+`${currentUser.username}`" v-else>Print</b-nav-item>
+						<b-nav-item :href="'http://127.0.0.1:8000/files/files_upload/?username='+`${currentUser.username}`" v-else>Print</b-nav-item>
 					</div>
 				</b-navbar-nav>
 			</b-collapse>
