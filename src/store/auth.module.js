@@ -79,7 +79,7 @@ const mutations = {
         state.user = {
             username: result.data.user.username,
             email: result.data.user.email,
-            is_staff: result.data.user.is_staff
+            is_staff: result.data.user.is_active
 
         };
     }
@@ -89,6 +89,8 @@ const mutations = {
 
 const getters = {
     currentUser() {
+        // console.log(state.user);
+        
         return state.user;
     }
 };

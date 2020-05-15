@@ -33,7 +33,8 @@ import {PdfService} from '../common/api.service'
      async  [GET_PDF]({commit}){
       // data recoje la información que viene del service con una promesa, una vez la información ha llegado ya se procesa
        const {data} = await PdfService.getAll()
-
+        console.log(data);
+        
        //En este caso por el tipo de información necesité crear un state secundario con un array para poder renderizar bien la información
        const state2 = {
          files: []
