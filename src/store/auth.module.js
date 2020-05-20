@@ -45,6 +45,8 @@ const actions = {
 
 const mutations = {
     [LOGIN](state, result) {
+        console.log(result);
+        
         //Modificamos el state del componente con los datos provenientes de las actions
         state.user = {
             username: result.data.user.username,
@@ -89,7 +91,7 @@ const mutations = {
 
 const getters = {
     currentUser() {
-        // console.log(state.user);
+         console.log(state.user);
         
         return state.user;
     }
