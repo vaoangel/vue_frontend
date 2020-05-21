@@ -13,10 +13,12 @@
 					</div>
 					<div id="usuaris" v-if="currentUser">
 						<b-nav-item href="http://127.0.0.1:8000/files/admin/" v-if="currentUser.username == 'gerente'">Upload Files</b-nav-item><!--Una ruta para un usuario de tipo is_staff y otra para usuarios normales, las cuales redirigen al backend para que puedan realizar sus respectivas acciones-->
-						<b-nav-item href="/pdf" v-if="currentUser.username == 'gerente'">Registre</b-nav-item><!--Una ruta para un usuario de tipo is_staff y otra para usuarios normales, las cuales redirigen al backend para que puedan realizar sus respectivas acciones-->
-
+					</div>
+					<div id="usuaris" v-if="currentUser">
 						<b-nav-item :href="'http://127.0.0.1:8000/files/files_upload/?username='+`${currentUser.username}`"  v-if="currentUser.username != 'gerente'">Print</b-nav-item>
-
+					</div>
+					<div id="usuaris" v-if="currentUser">
+						<b-nav-item href="/pdf" v-if="currentUser.username == 'gerente'">Registre</b-nav-item><!--Una ruta para un usuario de tipo is_staff y otra para usuarios normales, las cuales redirigen al backend para que puedan realizar sus respectivas acciones-->
 					</div>
 				</b-navbar-nav>
 			</b-collapse>
@@ -33,7 +35,9 @@ export default {
   methods: {
     logout(ev) {
 	ev.preventDefault();
-      this.$store.dispatch(LOGOUT);//funcion que llama al método logout, esto ira navegando por toda la Store hasta encontrar donde se llama este método
+	this.$store.dispatch(LOGOUT);//funcion que llama al método logout, esto ira navegando por toda la Store hasta encontrar donde se llama este método
+	this.$router.replace('/');
+
     }
   },
   computed: {
